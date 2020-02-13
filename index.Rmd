@@ -43,15 +43,15 @@ background-position: 100% 0%
 
 </br></br></br></br>
 
-- Fui discente do curso de bacharelado em estatística no Departamento de Estatística - UFPB entre os anos de 2006 à 2010.</br></br>
+- Crusei o **bacharelado** em estatística no Departamento de Estatística - UFPB entre os anos de 2006 à 2010.</br></br>
 
 --
 
-- Fiz meu mestrado em estatística no Departamento de Estatística - UFPE entre os anos de 2012 à 2014.</br></br>
+- Fui discente do programa de pós-graduação (**mestrado**) em estatística no Departamento de Estatística - UFPE entre os anos de 2012 à 2014.</br></br>
 
 --
 
-- Fiz meu doutorado também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
+- Fui discente do programa de pós-graduação (**doutorado**) também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
 
 ---
 background-image: url("img/logo-branca.png")
@@ -97,11 +97,11 @@ background-position: 100% 0%
 # Onde me encontrar?
 
 .pull-left[
-```{r fig.height=6, fig.width=5.5, eval=require('leaflet'), echo = FALSE}
+```{r fig.height=6, fig.width=6, eval=require('leaflet'), echo = FALSE}
 library(leaflet)
 leaflet() %>% addTiles() %>% 
   setView(
-  -34.846199, -7.140400, zoom = 37,
+  -34.846199, -7.140400, zoom = 60,
   options = popupOptions(
     minWidth = 200,
     maxWidth = 200
@@ -164,7 +164,7 @@ background-size: cover
 
 <span style="color:black">As metodologias estatísticas são embasadas por meio da teoria das probabilidades.</span>  </br></br>
 
-<span style="color:black">Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\theta)$.</span>  </br></br>
+<span style="color:black">Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida denominadas de **parâmetros**.</span>  </br></br>
 
 ]
 
@@ -197,8 +197,8 @@ All models are wrong but some are useful.
 
 .fadeInLeft.animated[
 .pull-right[
-```{r, echo=FALSE,out.width="400px", out.height="400px",fig.cap="George E. P. Box.",fig.show='hold',fig.align='center'}
-knitr::include_graphics("img/box.jpg")
+```{r, echo=FALSE,out.width="400px", out.height="400px",fig.cap="George E. P. Box, estatístico britânico que trabalhou em diversas áras da estatística como controle estatístico de qualidade e séries temporais.",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/box.png")
 ```
 ]]
 
@@ -222,24 +222,67 @@ background-position: 100% 0%
 
 # Inferência 
 
-A inferência estatística estatística é composta por um conjunto de técnicas fundamentadas matematicamente por meio da Teoria das Probabilidades que podem ser utilizadas para realizar três coisas:
+A inferência estatística estatística é composta por um conjunto de resultados estatísticos/matemáticos baseados na **Teoria das Probabilidades** que podem ser utilizadas para realizar três coisas que normalmente são de interesse na estatística:
 
+1. Realizar estimação pontual; </br></br>
+2. Construir intervalos aleatórios; </br></br>
+3. Testar Hipóteses.
 
+--
 
+Vocês podem se perguntar: 
+
+- Estimar o que? </br></br>
+- Construir intervalor para quem? </br></br>
+- Testar o que? </br></br>
+
+--
+
+**Resposta**: Queremos estimar os parâmetros, construir intervalos aleatórios para os parâmetros e testar alguma hipótese para os parâmetros. Lembre-se, realizar inferência para os parâmetros que indexam um modelo $F(\cdot)$ equivale equivale a fazer inferência para a população.
 
 ---
+background-image: url("img/logo-branca.png")
+background-size: 100px
 background-position: 100% 0%
-class: center, middle
 
-# Destaque com fundo escuro
+# Inferência
+
+Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb \theta)$ preferencialmente deverão satisfazer diversas propriedades inferenciais para que funcionem bem. Por exemplo, desejamos construir estimadores $\hat{\pmb \theta}$ que sejam não-viesados e consistentes para se estimar $\pmb \theta$. </br></br>
+
+--
+
+O desenvolvimento adequado desses estimadores, intervalos e testes normalmente se dará a custo de muita matemática. </br></br>
+
+--
+
+Porém, é **muito comum** nos depararmos com situações em que não conseguiremos obter matemáticamente algumas quantidades de intersse ou mesmo avaliar propriedades das estatísticas construídas. Nessas situações, deveremos recorrer à métodos computacionais que normalmente são **bastante intensivos**. Entre tais metodologias, na estatística é comum o uso de: </br></br>
+
+1. Métodos de otimização não-linear: métodos de Newton e quasi-Newton; </br></br>
+2. Simulações de Monte Carlo; </br></br>
+3. Métodos de reamostragem: jackknife e bootstrap.
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Conhecimentos necessários para uma possível orientação
+
+</br>
+
+Para que o aluno possa ser orientado por mim é necessário que ele curse três disciplinas. São elas: </br></br>
+
+--
+
+1. Probabiliade; </br></br>
+2. Introdução à Programação em R; </br></br>
+3. Inferência Estatística.
 
 ---
 background-position: 100% 0%
 class: inverse, center, middle
 
-# Destaque com fundo claro: Poderá ser utilizado na mudança de seções
-
-
+# Pesquisas atuais
 
 
 ---
@@ -248,6 +291,6 @@ background-size: 100px
 background-position: 100% 0%
 class: middle, center
 
-.jackInTheBox.animated[
+.fadeInDownBig.animated[
 # Obrigado pela sua atenção!
 ]
