@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Modelos probabilísticos, inferência e métodos estatísticos computacionais</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Pedro Rafael D. Marinho" />
+    <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="libs/jquery-1.12.4/jquery.min.js"></script>
+    <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-1.3.1/leaflet.js"></script>
+    <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+    <script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+    <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+    <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+    <link href="libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="tema.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Modelos probabilísticos, inferência e métodos estatísticos computacionais
+### Prof. Dr. Pedro Rafael D. Marinho
+### Departamento de Estatística - UFPB
+### </br>13 de fevereiro de 2020
+
+---
+
+
+
+
+background-position: 100% 0%
+class: inverse, center, middle
+
+# Um pouco sobre mim
+
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Minha formação
+
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
+
+- Fui discente do curso de bacharelado em estatística no Departamento de Estatística - UFPB entre os anos de 2006 à 2010.&lt;/br&gt;&lt;/br&gt;
+
+--
+
+- Fiz meu mestrado em estatística no Departamento de Estatística - UFPE entre os anos de 2012 à 2014.&lt;/br&gt;&lt;/br&gt;
+
+--
+
+- Fiz meu doutorado também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Minha formação
+
+--
+
+**MESTRADO**
+
+--
+
+No mestrado trabalhei desenvolvendo estratégias em inferência intervalar aplicadas à **modelos** de regressão utilizando métodos estatísticos computacionalmente intensivos. Fui orientado pelo Prof. Francisco Cribari Neto do Departamento de Estatística da UFPE.
+
+--
+
+Título da dissertação: **Estimadores Intervalares Sob Heteroscedasticidade de Forma Desconhecida Via Bootstrap Duplo**.
+
+Link da dissertação: clique [**aqui**](https://www3.ufpe.br/ppge/images/dissertacoes/dissertacao130.pdf).
+
+--
+
+**DOUTORADO**
+
+--
+
+No doutorado desenvolvi trabalhos na área de probabilidade com foco na obtenção de novas famílias de distribuições de probabilidade. O trabalho concentrou-se no desenvolvimento de propriedades matemáticas (inferência estatística) dos **modelos** propostos bem como foi desenvolvido bibliotecas computacionais para uso da comunidade científica que trabalha na área de distribuições de probabilidade.
+
+--
+
+Título da tese: **Some New Families of Continuous Distributions**.
+
+
+Link da tese: clique [**aqui**](https://www.ufpe.br/documents/39866/714959/tese020.pdf/6f867756-1954-4ea1-8b01-e9077c1bd7f2).
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Onde me encontrar?
+
+.pull-left[
+<div id="htmlwidget-e0dadbc4fe03a8abcf78" style="width:396px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e0dadbc4fe03a8abcf78">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],37,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
+]
+
+???
+
+Uma anotação qualquer. É preciso apertar a tecla **P** para ter acesso ao *modo apresentador*. As anotações podem incluir fórmulas matemáticas:
+
+`$$\int_0^x f(x) dx$$`
+
+--
+
+.fadeInLeft.animated[
+Você poderá me encontrar de diversas formas:
+.pull-right[
+-  Indo ao meu encontro no Departamento de Estatística - DE, UFPB. Minha sala é a última sala do correto (lado direito), **sala 12**.
+  
+-  Enviando um e-mail para mim: **pedro.rafael.marinho@gmail.com**.
+  
+-  Me segundo no **GitHub**. Acesse [https://github.com/prdm0](https://github.com/prdm0).
+
+No meu perfil no **GitHub** você poderá ter acesso à diversas bibliotecas computacionais que desenvolvo e estão sobre os termos da licença **GNU General Public License**. Você também poderá encontrar alguns materiais de algumas disciplinas que leciono no curso de bacharelado em estatística da UFPB.
+]]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Siga o Departamento de Estatística nas redes sociais
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+[<i class="fas  fa-link "></i> **Site do Departamento**: **http://www.de.ufpb.br/**](http://www.de.ufpb.br/)  
+[<i class="fab  fa-instagram "></i> **@estatisticaufpb**](https://www.instagram.com/estatisticaufpb/)  
+[<i class="fab  fa-twitter "></i> **@estatisticaufpb**](https://twitter.com/estatisticaufpb)  
+[<i class="fab  fa-github "></i> **@de-ufpb**](https://github.com/de-ufpb) 
+
+
+---
+background-position: 100% 0%
+class: inverse, center, middle
+
+# Afinal, o que é estatística?
+
+
+---
+background-image: url("img/cinza.jpg")
+background-size: cover
+
+# Grande esquema das coisas
+
+.pull-left[
+&lt;span style="color:black"&gt;A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza.&lt;/span&gt; &lt;/br&gt;&lt;/br&gt;
+
+&lt;span style="color:black"&gt;As metodologias estatísticas são embasadas por meio da teoria das probabilidades.&lt;/span&gt;  &lt;/br&gt;&lt;/br&gt;
+
+&lt;span style="color:black"&gt;Desejamos estudar características de uma popução por meio de um modelo probabilístico `\(F(\theta)\)`.&lt;/span&gt;  &lt;/br&gt;&lt;/br&gt;
+
+]
+
+--
+
+.fadeInLeft.animated[
+.pull-right[
+&lt;img src="img/esquema.png" width="1000px" height="350px" style="display: block; margin: auto;" /&gt;
+]]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Modelos
+
+--
+.pull-left[
+&lt;blockquote&gt;
+All models are wrong but some are useful.
+&lt;/blockquote&gt;
+.right[-- &lt;cite&gt;**George E. P. Box**&lt;/cite&gt;]
+
+]
+
+--
+
+.fadeInLeft.animated[
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/box.jpg" alt="George E. P. Box." width="400px" height="400px" /&gt;
+&lt;p class="caption"&gt;George E. P. Box.&lt;/p&gt;
+&lt;/div&gt;
+]]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Inferência
+
+- Se uma amostra representa bem uma população e podemos considerar uma distribuição `\(F(\cdot)\)` (um modelo), em que `\(F\)` poderá modelar as observações amostrais (os dados), então poderemos inferir por meio dos dados e de `\(F\)` características da população de interesse.
+
+--
+
+- Na inferência paramétrica, realizar inferência na população equivale a fazer inferência sobre os parâmetros que indexam o modelo `\(F\)`.
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Inferência 
+
+A inferência estatística estatística é composta por um conjunto de técnicas fundamentadas matematicamente por meio da Teoria das Probabilidades que podem ser utilizadas para realizar três coisas:
+
+
+
+
+---
+background-position: 100% 0%
+class: center, middle
+
+# Destaque com fundo escuro
+
+---
+background-position: 100% 0%
+class: inverse, center, middle
+
+# Destaque com fundo claro: Poderá ser utilizado na mudança de seções
+
+
+
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+class: middle, center
+
+.jackInTheBox.animated[
+# Obrigado pela sua atenção!
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"ratio": "16:9",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
