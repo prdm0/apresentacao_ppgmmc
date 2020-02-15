@@ -110,12 +110,6 @@ leaflet() %>% addTiles() %>%
 ```
 ]
 
-???
-
-Uma anotação qualquer. É preciso apertar a tecla **P** para ter acesso ao *modo apresentador*. As anotações podem incluir fórmulas matemáticas:
-
-$$\int_0^x f(x) dx$$
-
 --
 
 .fadeInLeft.animated[
@@ -197,7 +191,7 @@ All models are wrong but some are useful.
 
 .fadeInLeft.animated[
 .pull-right[
-```{r, echo=FALSE,out.width="400px", out.height="400px",fig.cap="George E. P. Box, estatístico britânico que trabalhou em diversas áras da estatística como controle estatístico de qualidade e séries temporais.",fig.show='hold',fig.align='center'}
+```{r, echo=FALSE,out.width="430px", out.height="380px",fig.cap="George E. P. Box, estatístico britânico que trabalhou em diversas áras da estatística como controle estatístico de qualidade e séries temporais.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/box.png")
 ```
 ]]
@@ -209,11 +203,22 @@ background-position: 100% 0%
 
 # Inferência
 
+
+.pull-left[
 - Se uma amostra representa bem uma população e podemos considerar uma distribuição $F(\cdot)$ (um modelo), em que $F$ poderá modelar as observações amostrais (os dados), então poderemos inferir por meio dos dados e de $F$ características da população de interesse.
 
---
+</br></br>
 
 - Na inferência paramétrica, realizar inferência na população equivale a fazer inferência sobre os parâmetros que indexam o modelo $F$.
+
+]
+
+.pull-right[
+```{r, echo=FALSE,out.width="450px",  out.height="400px",fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/aplicacao.png")
+```
+]
+
 
 ---
 background-image: url("img/logo-branca.png")
@@ -257,9 +262,20 @@ O desenvolvimento adequado desses estimadores, intervalos e testes normalmente s
 
 Porém, é **muito comum** nos depararmos com situações em que não conseguiremos obter matemáticamente algumas quantidades de intersse ou mesmo avaliar propriedades das estatísticas construídas. Nessas situações, deveremos recorrer à métodos computacionais que normalmente são **bastante intensivos**. Entre tais metodologias, na estatística é comum o uso de: </br></br>
 
+???
+
+Um bom estimador deverá ser:
+
+1. Não viesado;
+2. Consistente;
+3. Suficiente: Se a distribuição condicional $f(X | T)$ independe de $\theta$;
+4. Eficiente: menor EQM na classe de estimadores não viesados para $\theta$.
+
+--
+
 1. Métodos de otimização não-linear: métodos de Newton e quasi-Newton; </br></br>
-2. Simulações de Monte Carlo; </br></br>
-3. Métodos de reamostragem: jackknife e bootstrap.
+2. Simulações de [**Monte Carlo**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#monte-carlo); </br></br>
+3. Métodos de reamostragem: [**jackknife e bootstrap**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#bootstrap).
 
 ---
 background-image: url("img/logo-branca.png")
@@ -284,6 +300,175 @@ class: inverse, center, middle
 
 # Pesquisas atuais
 
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Biblioteca AdequacyModel
+
+.zoomInUp.animated[
+```{r, echo=FALSE,out.width="600px",  out.height="440px",fig.cap="Repositório da biblioteca AdequacyModel no GitHub.",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/AdequacyModel.png")
+```
+]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Biblioteca AdequacyModel
+
+</br></br>
+
+A biblioteca vem sendo melhorada e os próximos enfoques do desenvolvimento são:
+</br></br>
+--
+
+1. Implementar novas metodologias na área de teoria da informação; </br></br>
+2. Desenvolver novas metodologias na área de teoria da informação que poderão ser utilizadas como teste de adequação de ajuste de uma distribuições $F$ à um conjunto de dados. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem bem em pequenas amostras; </br></br>
+3. Melhorar o desempenho computacional da biblioteca usando **C/C++** usando a biblioteca **Rcpp**.
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+
+.fadeInLeft.animated[
+```{r, echo=FALSE,out.width="610px",  out.height="600px",fig.cap="Publicação recente na Revista Plos One.",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/plosone.png")
+```
+]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+
+</br></br>
+
+.fadeInRight.animated[
+```{r, echo=FALSE,out.width="900px",  out.height="500px",fig.cap="Função de Rastring (a) e Himmelblau's (b).",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/pso.png")
+```
+]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Função `pso()` do pacote AdequacyModel
+
+</br></br>
+
+.center[
+.zoomInUp.animated[
+```{r, echo = FALSE, out.height="350px", out.height="380px", fig.align='center', fig.cap="Função Easom."}
+library("htmltools")
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=qfRbX54RHf4")
+```
+]]
+</br>
+
+.center[
+Animação do funcionamento da função `pso()` do pacote **AdequacyModel** minimizando a função Easom ["ver"](https://www.sfu.ca/~ssurjano/easom.html).
+]
+
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Outras ferramentas utilizam o AdequacyModel
+
+</br></br>
+
+- Outras bibliotecas estatísticas dependem do pacote **AdequacyModel**, como por exemplo a biblioteca **Newdistns** publicada pelo **Saralees Nadarajah** e que originou um paper publicado no **Journal Statistical Software Software - JSS**. </br></br>
+
+--
+
+- No último mês houve mais de **1300** download do pacote. </br></br>
+
+--
+
+- Outras bibliotecas que dependem do **AdequacyModel** é a **Wrapped** desenvolvida por Yuanyuan Zhang e Saraless Nadarajah e que originou um paper publicado na revista Plos One. </br></br>
+
+--
+
+- Uma outra biblioteca de nome **sglg** também utiliza o **AdequacyModel** em sua implementação.
+
+---
+background-position: 100% 0%
+class: inverse, center, middle
+
+# Melhorando o procedimento de teste da razão de verossimilhança em pequenas amostras
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Modelos de probabilidade generalizados sup e inf
+
+Dado uma modelo probabilístico $G$ (modelo base), é possível obter modelos generelizados como os modelos $G_c^{\mbox{sup}}$ e $G_c^{\mbox{inf}}$.
+
+.fadeInLeft.animated[
+```{r, echo=FALSE, out.width="400px", out.height="350px", fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/modelo_sup.png")
+```
+]
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Modelos de probabilidade generalizados sup e inf
+
+</br></br>
+
+\begin{align*}
+ H_0: \theta\in\Theta_0\quad \mbox{versus} \quad H_1: H_0\  \mbox{é falsa}
+\end{align*}
+
+
+Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula $H_0$ com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística $\lambda$ definida por
+
+$$\lambda = \frac{L(\theta_0|\pmb x)}{L(\pmb\theta|\pmb x)},$$
+em que $L(\cdot)$ é uma função que denominamos de função de verossimilhança.
+</br>
+
+Existe um resultado que garante que, quando o tamanho $n$ da amostra é grande, então podemos usar a distribuição qui-quadrado $\chi^2$ para definir a região crítica do TRV, pelo menos aproximadamente.
+
+</br>
+
+--
+
+**Problema**: quando o tamanho da amostra é pequeno, o TRV pode levar a inferências imprecisas.
+
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Modelos de probabilidade generalizados sup e inf
+
+**Idéia**: Usar as propriedades do modelo qui-quadrado inf para obter um aperfeiçoamento do Teste da Razão de Verossimilhanças (TRV) quando o tamanho da amostra $n$ é pequeno.  
+ 
+</br></br>
+
+A proposta da pesquisa é propor uma correção não na estatística $RV$, como acontece nas correções usuais, mas sim na distribuição qui-quadrado $\chi^2$. A correção consiste em considerar a nova distribuição qui-quadrado inf$ \chi^2_{inf}$ para modificar a região crítica do TRV, conduzindo a resultados inferenciais mais acurados quando $n$ é pequeno a moderado.
+
+</br></br>
+ 
+A nova metodologia é consistente no sentido que $\chi^2_{inf} \longrightarrow \chi^2$ quando $n\rightarrow \infty$.
 
 ---
 background-image: url("img/logo-branca.png")
