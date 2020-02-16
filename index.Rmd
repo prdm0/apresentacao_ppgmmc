@@ -146,16 +146,18 @@ class: inverse, center, middle
 
 # Afinal, o que é estatística?
 
+.fadeInDownBig.animated[
 ```{r, echo=FALSE, out.width="390px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/interrogacao.gif")
 ```
+]
 
 ---
 background-image: url("img/white.jpg")
 background-size: cover
 class: inverse
 
-# Grande Esquema das Coisas
+# **Grande Esquema das Coisas**
 
 
 .pull-left[
@@ -182,7 +184,7 @@ background-image: url("img/white.jpg")
 background-size: cover
 class: inverse
 
-# Grande Esquema das Coisas
+# **Grande Esquema das Coisas**
 
 .pull-left[
 A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza. </br></br>
@@ -205,7 +207,7 @@ background-image: url("img/white.jpg")
 background-size: cover
 class: inverse
 
-# Grande Esquema das Coisas
+# **Grande Esquema das Coisas**
 
 .pull-left[
 A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza. </br></br>
@@ -252,7 +254,7 @@ background-image: url("img/white.jpg")
 background-size: cover
 class: inverse
 
-# Inferência
+# **Inferência**
 
 
 .pull-left[
@@ -264,11 +266,12 @@ class: inverse
 
 ]
 
+.fadeInLeft.animated[
 .pull-right[
-```{r, echo=FALSE,out.width="450px",  out.height="400px",fig.cap="",fig.show='hold',fig.align='center'}
+```{r, echo=FALSE,out.width="550px",  out.height="400px",fig.cap="",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/aplicacao.png")
 ```
-]
+]]
 
 
 ---
@@ -500,8 +503,8 @@ background-position: 100% 0%
 
 Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula $H_0$ com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística $\hat{\lambda}$ definida por
 
-$$\hat{\lambda} = \frac{L(\theta_0|\pmb x)}{L(\hat{\pmb\theta}|\pmb x)},$$
-em que $L(\cdot)$ é uma função que denominamos de **função de verossimilhança**.
+$$\hat{\lambda} = -2\ln\Big[\frac{L(\theta_0|\pmb x)}{L(\hat{\pmb\theta}|\pmb x)}\Big],$$
+em que $L(\cdot)$ é uma função que denominamos de [**função de verossimilhança**](http://mathworld.wolfram.com/Log-LikelihoodFunction.html).
 </br>
 
 Existe um resultado que garante que, quando o tamanho $n$ da amostra é grande, então podemos usar a distribuição qui-quadrado $\chi^2$ para definir a região crítica do TRV, pelo menos aproximadamente.
