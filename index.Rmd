@@ -121,7 +121,7 @@ Você poderá me encontrar de diversas formas:
   
 -  Me seguindo no **GitHub**. Acesse [**https://github.com/prdm0**](https://github.com/prdm0).
 
-No meu perfil no **GitHub** você poderá ter acesso à diversas bibliotecas computacionais que desenvolvo e estão sobre os termos da licença **GNU General Public License**. Você também poderá encontrar alguns materiais de algumas disciplinas que leciono no curso de bacharelado em estatística da UFPB.
+No meu perfil no **GitHub** você poderá ter acesso à diversas bibliotecas computacionais que desenvolvo e estão sobre os termos da licença **GNU General Public License**. Você também poderá encontrar alguns materiais de algumas disciplinas que leciono no curso de bacharelado em estatística da UFPB. Por exemplo, você poderá acessar o material da disciplina de [**Estatística Computacional**](https://prdm0.github.io/aulas_computacional).
 ]]
 
 ---
@@ -158,7 +158,7 @@ background-size: cover
 
 <span style="color:black">As metodologias estatísticas são embasadas por meio da teoria das probabilidades.</span>  </br></br>
 
-<span style="color:black">Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida denominadas de **parâmetros**.</span>  </br></br>
+<span style="color:black">Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**.</span>  </br></br>
 
 ]
 
@@ -227,11 +227,11 @@ background-position: 100% 0%
 
 # Inferência 
 
-A inferência estatística é composta por um conjunto de resultados estatísticos/matemáticos baseados na **Teoria das Probabilidades** que podem ser utilizadas para realizar três coisas que normalmente são de interesse na estatística:
+A inferência estatística é composta por um conjunto de resultados estatísticos/matemáticos baseados na **Teoria das Probabilidades** que podem ser utilizados para realizar três coisas que normalmente são de interesse na estatística:
 
-1. Realizar estimação pontual; </br></br>
-2. Construir intervalos aleatórios; </br></br>
-3. Testar Hipóteses.
+1. Realizar estimação **pontual**; </br></br>
+2. Construir **intervalos** aleatórios; </br></br>
+3. Testar **hipóteses**.
 
 --
 
@@ -252,7 +252,7 @@ background-position: 100% 0%
 
 # Inferência
 
-Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb \theta)$ preferencialmente deverão satisfazer diversas propriedades inferenciais para que funcionem bem. Por exemplo, desejamos construir estimadores $\hat{\pmb \theta}$ que sejam não-viesados e consistentes para se estimar $\pmb \theta$. </br></br>
+Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb \theta)$ preferencialmente deverão satisfazer diversas propriedades inferenciais para que funcionem bem. Por exemplo, desejamos construir estimadores $\hat{\pmb \theta}$ que sejam **não-viesados** e **consistentes** para se estimar $\pmb \theta$. </br></br>
 
 --
 
@@ -273,7 +273,7 @@ Um bom estimador deverá ser:
 
 --
 
-1. Métodos de otimização não-linear: métodos de Newton e quasi-Newton; </br></br>
+1. Métodos de **otimização não-linear**: métodos de Newton e quasi-Newton; </br></br>
 2. Simulações de [**Monte Carlo**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#monte-carlo); </br></br>
 3. Métodos de reamostragem: [**jackknife e bootstrap**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#bootstrap).
 
