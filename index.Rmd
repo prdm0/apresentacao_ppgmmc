@@ -350,9 +350,9 @@ class: inverse
 
 
 .fadeInDownBig.animated[
-1. .font130[Probabiliade;] </br></br>
-2. .font130[Introdução à Programação em R;] </br></br>
-3. .font130[Inferência Estatística.]
+1. .font130[**Probabiliade**;] </br></br>
+2. .font130[**Introdução à Programação em R**;] </br></br>
+3. .font130[**Inferência Estatística**.]
 ]
 
 ---
@@ -494,12 +494,11 @@ background-position: 100% 0%
 
 # Modelos de probabilidade generalizados sup e inf
 
-</br></br>
+</br>
 
 \begin{align*}
  H_0: \theta\in\Theta_0\quad \mbox{versus} \quad H_1: H_0\  \mbox{é falsa}
 \end{align*}
-
 
 Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula $H_0$ com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística $\hat{\lambda}$ definida por
 
@@ -509,11 +508,9 @@ em que $L(\cdot)$ é uma função que denominamos de [**função de verossimilha
 
 Existe um resultado que garante que, quando o tamanho $n$ da amostra é grande, então podemos usar a distribuição qui-quadrado $\chi^2$ para definir a região crítica do TRV, pelo menos aproximadamente.
 
-</br>
-
 --
 
-**Problema**: quando o tamanho da amostra é pequeno, o TRV pode levar a inferências imprecisas.
+.font130[**Problema**: quando o tamanho da amostra é pequeno, o TRV pode levar a inferências imprecisas.]
 
 
 ---
@@ -523,7 +520,7 @@ background-position: 100% 0%
 
 # Modelos de probabilidade generalizados sup e inf
 
-**Idéia**: Usar as propriedades do modelo qui-quadrado inf para obter um aperfeiçoamento do Teste da Razão de Verossimilhanças (TRV) quando o tamanho da amostra $n$ é pequeno.  
+.font130[**Idéia**: Usar as propriedades do modelo qui-quadrado inf para obter um aperfeiçoamento do Teste da Razão de Verossimilhanças (TRV) quando o tamanho da amostra $n$ é pequeno.]
  
 </br></br>
 
