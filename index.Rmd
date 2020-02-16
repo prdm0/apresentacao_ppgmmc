@@ -350,9 +350,9 @@ class: inverse
 
 
 .fadeInDownBig.animated[
-1. .font130[**Probabiliade**;] </br></br>
-2. .font130[**Introdução à Programação em R**;] </br></br>
-3. .font130[**Inferência Estatística**.]
+- .font150[**Probabiliade**] </br></br>
+- .font150[**Introdução à Programação em R**] </br></br>
+- .font150[**Inferência Estatística**]
 ]
 
 ---
@@ -406,9 +406,9 @@ knitr::include_graphics("img/plosone.png")
 ]
 
 ---
-background-image: url("img/logo-branca.png")
-background-size: 100px
-background-position: 100% 0%
+background-image: url("img/white.jpg")
+background-size: cover
+class: inverse
 
 
 </br></br>
