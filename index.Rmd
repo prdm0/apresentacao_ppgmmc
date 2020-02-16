@@ -119,7 +119,7 @@ Você poderá me encontrar de diversas formas:
   
 -  Enviando um e-mail para mim: **pedro.rafael.marinho@gmail.com**.
   
--  Me segundo no **GitHub**. Acesse [**https://github.com/prdm0**](https://github.com/prdm0).
+-  Me seguindo no **GitHub**. Acesse [**https://github.com/prdm0**](https://github.com/prdm0).
 
 No meu perfil no **GitHub** você poderá ter acesso à diversas bibliotecas computacionais que desenvolvo e estão sobre os termos da licença **GNU General Public License**. Você também poderá encontrar alguns materiais de algumas disciplinas que leciono no curso de bacharelado em estatística da UFPB.
 ]]
