@@ -243,7 +243,9 @@ Vocês podem se perguntar:
 
 --
 
+.fadeInDownBig.animated[
 **Resposta**: Queremos estimar os parâmetros, construir intervalos aleatórios para os parâmetros e testar alguma hipótese para os parâmetros. Lembre-se, realizar inferência para os parâmetros que indexam um modelo $F(\cdot)$ equivale equivale a fazer inferência para a população.
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -443,10 +445,10 @@ background-position: 100% 0%
 \end{align*}
 
 
-Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula $H_0$ com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística $\lambda$ definida por
+Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula $H_0$ com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística $\hat{\lambda}$ definida por
 
-$$\lambda = \frac{L(\theta_0|\pmb x)}{L(\pmb\theta|\pmb x)},$$
-em que $L(\cdot)$ é uma função que denominamos de função de verossimilhança.
+$$\hat{\lambda} = \frac{L(\theta_0|\pmb x)}{L(\hat{\pmb\theta}|\pmb x)},$$
+em que $L(\cdot)$ é uma função que denominamos de **função de verossimilhança**.
 </br>
 
 Existe um resultado que garante que, quando o tamanho $n$ da amostra é grande, então podemos usar a distribuição qui-quadrado $\chi^2$ para definir a região crítica do TRV, pelo menos aproximadamente.

@@ -101,8 +101,8 @@ background-position: 100% 0%
 # Onde me encontrar?
 
 .pull-left[
-<div id="htmlwidget-a7f6d862d1c6b1355eea" style="width:432px;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a7f6d862d1c6b1355eea">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-da258e84032462a7778d" style="width:432px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-da258e84032462a7778d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
 ]
 
 --
@@ -235,7 +235,9 @@ Vocês podem se perguntar:
 
 --
 
+.fadeInDownBig.animated[
 **Resposta**: Queremos estimar os parâmetros, construir intervalos aleatórios para os parâmetros e testar alguma hipótese para os parâmetros. Lembre-se, realizar inferência para os parâmetros que indexam um modelo `\(F(\cdot)\)` equivale equivale a fazer inferência para a população.
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -432,10 +434,10 @@ background-position: 100% 0%
 \end{align*}`
 
 
-Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula `\(H_0\)` com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística `\(\lambda\)` definida por
+Um  procedimento comumente usado é o Teste da Razão de Verossimilhanças (TRV)  que consiste  em aceitar ou rejeitar a hipótese nula `\(H_0\)` com base em um conjunto de observações (amostra). O TRV faz uso de uma estatística `\(\hat{\lambda}\)` definida por
 
-`$$\lambda = \frac{L(\theta_0|\pmb x)}{L(\pmb\theta|\pmb x)},$$`
-em que `\(L(\cdot)\)` é uma função que denominamos de função de verossimilhança.
+`$$\hat{\lambda} = \frac{L(\theta_0|\pmb x)}{L(\hat{\pmb\theta}|\pmb x)},$$`
+em que `\(L(\cdot)\)` é uma função que denominamos de **função de verossimilhança**.
 &lt;/br&gt;
 
 Existe um resultado que garante que, quando o tamanho `\(n\)` da amostra é grande, então podemos usar a distribuição qui-quadrado `\(\chi^2\)` para definir a região crítica do TRV, pelo menos aproximadamente.
