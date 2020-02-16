@@ -23,7 +23,7 @@ library(xaringanthemer)
 mono_dark(
   base_color = "#FF7100",
   header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Barlow", "400", "400i"),
+  text_font_google   = google_font("Barlow", "600", "600i"),
   code_font_google   = google_font("Droid Mono"),
 )
 ```
@@ -282,23 +282,23 @@ Um bom estimador deverá ser:
 ]
 
 ---
-background-image: url("img/logo-branca.png")
-background-size: 100px
-background-position: 100% 0%
+background-image: url("img/estudo.jpg")
+background-size: cover
+class: inverse
 
 # Conhecimentos necessários para uma possível orientação
 
 </br>
 
-Para que o aluno possa ser orientado por mim é necessário que ele curse três disciplinas. São elas: </br></br>
+.font150[Para que o aluno possa ser orientado por mim é necessário que ele curse três disciplinas. São elas:] </br></br>
 
 --
 
 
 .fadeInDownBig.animated[
-1. Probabiliade; </br></br>
-2. Introdução à Programação em R; </br></br>
-3. Inferência Estatística.
+1. .font130[Probabiliade;] </br></br>
+2. .font130[Introdução à Programação em R;] </br></br>
+3. .font130[Inferência Estatística.]
 ]
 
 ---

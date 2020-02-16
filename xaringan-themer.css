@@ -16,14 +16,14 @@
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Barlow:400,400i);
+@import url(https://fonts.googleapis.com/css?family=Barlow:600,600i);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Droid+Mono);
 
 
 body {
   font-family: Barlow, 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
-  font-weight: 400;
+  font-weight: 600;
   color: #FFE2CC;
 }
 h1, h2, h3 {
