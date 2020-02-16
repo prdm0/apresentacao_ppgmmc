@@ -146,19 +146,24 @@ class: inverse, center, middle
 
 # Afinal, o que é estatística?
 
+```{r, echo=FALSE, out.width="390px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/interrogacao.gif")
+```
 
 ---
-background-image: url("img/cinza.jpg")
+background-image: url("img/white.jpg")
 background-size: cover
+class: inverse
 
 # Grande Esquema das Coisas
 
+
 .pull-left[
-<span style="color:black">A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza.</span> </br></br>
+A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza. </br></br>
 
-<span style="color:black">As metodologias estatísticas são embasadas por meio da teoria das probabilidades.</span>  </br></br>
+As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
 
-<span style="color:black">Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**.</span>  </br></br>
+Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
 
 ]
 
@@ -166,10 +171,56 @@ background-size: cover
 
 .fadeInLeft.animated[
 .pull-right[
-```{r, echo=FALSE,out.width="1000px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
-knitr::include_graphics("img/esquema.png")
+```{r, echo=FALSE,out.width="900px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/esquema1.png")
 ```
 ]]
+
+
+---
+background-image: url("img/white.jpg")
+background-size: cover
+class: inverse
+
+# Grande Esquema das Coisas
+
+.pull-left[
+A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza. </br></br>
+
+As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
+
+Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
+
+]
+
+
+.pull-right[
+```{r, echo=FALSE,out.width="900px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/esquema2.png")
+```
+]
+
+---
+background-image: url("img/white.jpg")
+background-size: cover
+class: inverse
+
+# Grande Esquema das Coisas
+
+.pull-left[
+A estatística é a ciência que nos permite estudar fenômenos que contém algum grau de incerteza. </br></br>
+
+As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
+
+Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
+
+]
+
+.pull-right[
+```{r, echo=FALSE,out.width="900px",  out.height="350px",fig.cap="",fig.show='hold',fig.align='center'}
+knitr::include_graphics("img/esquema3.png")
+```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -197,9 +248,9 @@ knitr::include_graphics("img/box.png")
 ]]
 
 ---
-background-image: url("img/logo-branca.png")
-background-size: 100px
-background-position: 100% 0%
+background-image: url("img/white.jpg")
+background-size: cover
+class: inverse
 
 # Inferência
 
