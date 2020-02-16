@@ -308,7 +308,7 @@ background-position: 100% 0%
 
 # Inferência
 
-Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb \theta)$ preferencialmente deverão satisfazer diversas propriedades inferenciais para que funcionem bem. Por exemplo, desejamos construir estimadores $\hat{\pmb \theta}$ que sejam **não-viesados** e **consistentes** para se estimar $\pmb \theta$. </br></br>
+Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb \theta)$ e preferencialmente deverão satisfazer diversas propriedades inferenciais para que funcionem bem. Por exemplo, desejamos construir estimadores $\hat{\pmb \theta}$ que sejam **não-viesados** e **consistentes** para se estimar $\pmb \theta$. </br></br>
 
 --
 
