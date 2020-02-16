@@ -101,8 +101,8 @@ background-position: 100% 0%
 # Onde me encontrar?
 
 .pull-left[
-<div id="htmlwidget-d650545ecd67c76c4257" style="width:432px;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d650545ecd67c76c4257">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a7f6d862d1c6b1355eea" style="width:432px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a7f6d862d1c6b1355eea">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
 ]
 
 --
@@ -265,9 +265,11 @@ Um bom estimador deverá ser:
 
 --
 
+.fadeInDownBig.animated[
 1. Métodos de **otimização não-linear**: métodos de Newton e quasi-Newton; &lt;/br&gt;&lt;/br&gt;
 2. Simulações de [**Monte Carlo**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#monte-carlo); &lt;/br&gt;&lt;/br&gt;
 3. Métodos de reamostragem: [**jackknife e bootstrap**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#bootstrap).
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -282,9 +284,12 @@ Para que o aluno possa ser orientado por mim é necessário que ele curse três 
 
 --
 
+
+.fadeInDownBig.animated[
 1. Probabiliade; &lt;/br&gt;&lt;/br&gt;
 2. Introdução à Programação em R; &lt;/br&gt;&lt;/br&gt;
 3. Inferência Estatística.
+]
 
 ---
 background-position: 100% 0%
@@ -319,9 +324,9 @@ A biblioteca vem sendo melhorada e os próximos enfoques do desenvolvimento são
 &lt;/br&gt;&lt;/br&gt;
 --
 
-1. Implementar novas metodologias na área de teoria da informação; &lt;/br&gt;&lt;/br&gt;
-2. Desenvolver novas metodologias na área de teoria da informação que poderão ser utilizadas como teste de adequação de ajuste de uma distribuições `\(F\)` à um conjunto de dados. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem bem em pequenas amostras; &lt;/br&gt;&lt;/br&gt;
-3. Melhorar o desempenho computacional da biblioteca usando **C/C++** usando a biblioteca **Rcpp**.
+1. Implementar nova(s) estatística(s) para teste de adequação de ajuste; &lt;/br&gt;&lt;/br&gt;
+2. Desenvolver nova(s) estatística(s) que poderão ser utilizada(s) como teste(s) de adequação de ajuste. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem em pequenas amostras; &lt;/br&gt;&lt;/br&gt;
+3. Melhorar o desempenho computacional da biblioteca usando **C/C++** por meio da API **Rcpp**.
 
 ---
 background-image: url("img/logo-branca.png")

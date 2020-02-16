@@ -273,9 +273,11 @@ Um bom estimador deverá ser:
 
 --
 
+.fadeInDownBig.animated[
 1. Métodos de **otimização não-linear**: métodos de Newton e quasi-Newton; </br></br>
 2. Simulações de [**Monte Carlo**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#monte-carlo); </br></br>
 3. Métodos de reamostragem: [**jackknife e bootstrap**](https://prdm0.github.io/aulas_computacional/t%C3%B3picos-em-estat%C3%ADstica-computacional.html#bootstrap).
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -290,9 +292,12 @@ Para que o aluno possa ser orientado por mim é necessário que ele curse três 
 
 --
 
+
+.fadeInDownBig.animated[
 1. Probabiliade; </br></br>
 2. Introdução à Programação em R; </br></br>
 3. Inferência Estatística.
+]
 
 ---
 background-position: 100% 0%
@@ -326,9 +331,9 @@ A biblioteca vem sendo melhorada e os próximos enfoques do desenvolvimento são
 </br></br>
 --
 
-1. Implementar novas metodologias na área de teoria da informação; </br></br>
-2. Desenvolver novas metodologias na área de teoria da informação que poderão ser utilizadas como teste de adequação de ajuste de uma distribuições $F$ à um conjunto de dados. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem bem em pequenas amostras; </br></br>
-3. Melhorar o desempenho computacional da biblioteca usando **C/C++** usando a biblioteca **Rcpp**.
+1. Implementar nova(s) estatística(s) para teste de adequação de ajuste; </br></br>
+2. Desenvolver nova(s) estatística(s) que poderão ser utilizada(s) como teste(s) de adequação de ajuste. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem em pequenas amostras; </br></br>
+3. Melhorar o desempenho computacional da biblioteca usando **C/C++** por meio da API **Rcpp**.
 
 ---
 background-image: url("img/logo-branca.png")
