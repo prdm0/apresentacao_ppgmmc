@@ -258,7 +258,7 @@ Os estimadores, intervalos e testes são construídos com base no modelo $F(\pmb
 
 --
 
-O desenvolvimento adequado desses estimadores, intervalos e testes normalmente se dará a custo de muita matemática. </br></br>
+O desenvolvimento adequado desses estimadores, intervalos e testes normalmente se dará a custo de **muita matemática**. </br></br>
 
 --
 
