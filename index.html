@@ -101,8 +101,8 @@ background-position: 100% 0%
 # Onde me encontrar?
 
 .pull-left[
-<div id="htmlwidget-da258e84032462a7778d" style="width:432px;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-da258e84032462a7778d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3c4e56c050ce98870ae5" style="width:432px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3c4e56c050ce98870ae5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],60,{"maxWidth":200,"minWidth":200,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
 ]
 
 --
@@ -326,9 +326,11 @@ A biblioteca vem sendo melhorada e os próximos enfoques do desenvolvimento são
 &lt;/br&gt;&lt;/br&gt;
 --
 
+.fadeInUpBig.animated[
 1. Implementar nova(s) estatística(s) para teste de adequação de ajuste; &lt;/br&gt;&lt;/br&gt;
 2. Desenvolver nova(s) estatística(s) que poderão ser utilizada(s) como teste(s) de adequação de ajuste. A ideia é tentar conseguir formas de obter boas estatíticas de adequação de ajuste que funcionem em pequenas amostras; &lt;/br&gt;&lt;/br&gt;
 3. Melhorar o desempenho computacional da biblioteca usando **C/C++** por meio da API **Rcpp**.
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -460,7 +462,7 @@ background-position: 100% 0%
  
 &lt;/br&gt;&lt;/br&gt;
 
-A proposta da pesquisa é propor uma correção não na estatística `\(RV\)`, como acontece nas correções usuais, mas sim na distribuição qui-quadrado `\(\chi^2\)`. A correção consiste em considerar a nova distribuição qui-quadrado inf$ \chi^2_{inf}$ para modificar a região crítica do TRV, conduzindo a resultados inferenciais mais acurados quando `\(n\)` é pequeno a moderado.
+A proposta da pesquisa é propor uma correção não na estatística `\(RV\)`, como acontece nas correções usuais, mas sim na distribuição qui-quadrado `\(\chi^2\)`. A correção consiste em considerar a nova distribuição qui-quadrado inf `\(\chi^2_{inf}\)` para modificar a região crítica do TRV, conduzindo a resultados inferenciais mais acurados quando `\(n\)` de pequeno a moderado.
 
 &lt;/br&gt;&lt;/br&gt;
  
