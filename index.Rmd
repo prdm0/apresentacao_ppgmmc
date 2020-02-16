@@ -43,15 +43,15 @@ background-position: 100% 0%
 
 </br></br></br></br>
 
-- Crusei o **bacharelado** em estatística no Departamento de Estatística - UFPB entre os anos de 2006 à 2010.</br></br>
+- Cursei o **bacharelado** em estatística no Departamento de Estatística - UFPB entre os anos de 2006 à 2010.</br></br></br>
 
 --
 
-- Fui discente do programa de pós-graduação (**mestrado**) em estatística no Departamento de Estatística - UFPE entre os anos de 2012 à 2014.</br></br>
+- Cursei o **mestrado** em estatística no Departamento de Estatística - UFPE entre os anos de 2012 à 2014.</br></br></br>
 
 --
 
-- Fui discente do programa de pós-graduação (**doutorado**) também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
+- E finalmente cursei o **doutorado** também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
 
 ---
 background-image: url("img/logo-branca.png")
@@ -227,7 +227,7 @@ background-position: 100% 0%
 
 # Inferência 
 
-A inferência estatística estatística é composta por um conjunto de resultados estatísticos/matemáticos baseados na **Teoria das Probabilidades** que podem ser utilizadas para realizar três coisas que normalmente são de interesse na estatística:
+A inferência estatística é composta por um conjunto de resultados estatísticos/matemáticos baseados na **Teoria das Probabilidades** que podem ser utilizadas para realizar três coisas que normalmente são de interesse na estatística:
 
 1. Realizar estimação pontual; </br></br>
 2. Construir intervalos aleatórios; </br></br>
