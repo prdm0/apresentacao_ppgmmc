@@ -165,7 +165,7 @@ A estatística é a ciência que nos permite estudar fenômenos que contém algu
 
 As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
 
-Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
+Desejamos estudar características de uma população por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
 
 ]
 
@@ -191,7 +191,7 @@ A estatística é a ciência que nos permite estudar fenômenos que contém algu
 
 As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
 
-Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
+Desejamos estudar características de uma população por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
 
 ]
 
@@ -214,7 +214,7 @@ A estatística é a ciência que nos permite estudar fenômenos que contém algu
 
 As metodologias estatísticas são embasadas por meio da teoria das probabilidades.  </br></br>
 
-Desejamos estudar características de uma popução por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
+Desejamos estudar características de uma população por meio de um modelo probabilístico $F(\pmb\theta)$, em que $\pmb\theta$ é um vetor de quantidade fixas e desconhecida que denominamos de **parâmetros**. </br></br>
 
 ]
 
