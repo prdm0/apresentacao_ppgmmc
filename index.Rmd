@@ -298,7 +298,7 @@ Vocês podem se perguntar:
 --
 
 .fadeInDownBig.animated[
-**Resposta**: Queremos estimar os parâmetros, construir intervalos aleatórios para os parâmetros e testar alguma hipótese para os parâmetros. Lembre-se, realizar inferência para os parâmetros que indexam um modelo $F(\cdot)$ equivale equivale a fazer inferência para a população.
+**Resposta**: Queremos estimar os parâmetros, construir intervalos aleatórios para os parâmetros e testar alguma hipótese para os parâmetros. Lembre-se, realizar inferência para os parâmetros que indexam um modelo $F(\cdot)$ equivale fazer inferência para a população.
 ]
 
 ---
