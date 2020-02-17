@@ -452,7 +452,7 @@ background-position: 100% 0%
 
 </br></br>
 
-- Outras bibliotecas estatísticas dependem do pacote **AdequacyModel**, como por exemplo a biblioteca **Newdistns** publicada pelo **Saralees Nadarajah** e que originou um paper publicado no **Journal Statistical Software Software - JSS**. </br></br>
+- Outras bibliotecas estatísticas dependem do pacote [**AdequacyModel**](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0221487), como por exemplo a biblioteca [**Newdistns**](https://www.jstatsoft.org/article/view/v069i10) publicada pelo [**Saralees Nadarajah**](https://www.manchester.ac.uk/discover/news/dr-saralees-nadarajah-wins-2019-students-union-award/) e que originou um paper publicado no **Journal Statistical Software - JSS**. </br></br>
 
 --
 
@@ -460,11 +460,11 @@ background-position: 100% 0%
 
 --
 
-- Outras bibliotecas que dependem do **AdequacyModel** é a **Wrapped** desenvolvida por Yuanyuan Zhang e Saraless Nadarajah e que originou um paper publicado na revista Plos One. </br></br>
+- Outras bibliotecas que dependem do [**AdequacyModel**](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0221487) é a [**Wrapped**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188512) desenvolvida por [**Yuanyuan Zhang**](https://www.manchester.ac.uk/discover/news/phd-student-receives-ims-new-researcher-travel-award/) e [**Saralees Nadarajah**](https://www.manchester.ac.uk/discover/news/dr-saralees-nadarajah-wins-2019-students-union-award/) e que originou um paper publicado na revista Plos One. </br></br>
 
 --
 
-- Uma outra biblioteca de nome **sglg** também utiliza o **AdequacyModel** em sua implementação.
+- Uma outra biblioteca de nome [**sglg**](https://cran.r-project.org/web/packages/sglg/index.html) também utiliza o [**AdequacyModel**](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0221487) em sua implementação.
 
 ---
 background-position: 100% 0%
