@@ -366,10 +366,8 @@ background-image: url("img/logo-branca.png")
 background-size: 100px
 background-position: 100% 0%
 
-# Biblioteca AdequacyModel
-
 .zoomInUp.animated[
-```{r, echo=FALSE,out.width="600px",  out.height="440px",fig.cap="Repositório da biblioteca AdequacyModel no GitHub.",fig.show='hold',fig.align='center'}
+```{r, echo=FALSE,out.width="570px",  out.height="540px",fig.cap="Repositório da biblioteca AdequacyModel no GitHub.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/AdequacyModel.png")
 ```
 ]
