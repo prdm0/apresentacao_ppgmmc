@@ -51,7 +51,7 @@ background-position: 100% 0%
 
 --
 
-- E finalmente cursei o **doutorado** também em estatística no Departamento Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
+- E finalmente cursei o **doutorado** também em estatística no Departamento de Estatística - UFPE entre os anos de 2014 à 2016.
 
 ---
 background-image: url("img/logo-branca.png")
